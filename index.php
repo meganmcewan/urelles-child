@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-HELLLO!!
-
 <?php
 global $wp_query;
 $id = $wp_query->get_queried_object_id();
