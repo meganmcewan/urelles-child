@@ -326,7 +326,14 @@ $_post_format = get_post_format();
 		default:
 ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<!-- <?php	if(in_category('urelles')) { ?>
+		<div style="margin-top:100px;" class="button-wrap">
+					<a href="/blog/" style="color:#F29555;border-color:#F29555;background-color:#f5f5f5;" data-hover-background-color="#F29555" data-hover-color="#FFFFFF" class="qbutton">← Retour au blog</a>
+				</div>
+
+			<?php } ?> -->
 			<div class="post_content_holder">
+				
 				<?php if(get_post_meta(get_the_ID(), "qode_hide-featured-image", true) != "yes") {
 					if ( has_post_thumbnail() ) { ?>
 						<div class="post_image">
