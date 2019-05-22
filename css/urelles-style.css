@@ -1,0 +1,13 @@
+/* custom style sheet for the child theme */
+
+
+h1{
+    font-size: 44px !important;
+}
+
+@media screen and (max-width: 1000px){
+    h1 {
+        font-size: 64px;
+
+    }
+}

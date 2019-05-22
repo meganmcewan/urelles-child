@@ -13,3 +13,20 @@ License URI: licence/GPL.txt
 CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
 
 */
+
+
+
+.title-h1 h1{
+    font-size: 44px;
+}
+    
+@media screen and (min-width: 1000px){
+    .title-h1 h1 {
+            font-size: 64px;
+    
+        };
+};
+
+
+
+
