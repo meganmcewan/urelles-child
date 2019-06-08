@@ -77,6 +77,9 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 .latest_post_holder .latest_post_overlay .icon_plus{
     margin: 0!important;
 }
+.parallax_section_holder{
+    height: auto!important
+}
 
 @media screen and (max-width: 1000px){
 
