@@ -70,6 +70,11 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 .two_columns_75_25>.column1{
     width: 100% !important;
 }
+.latest_post_holder.boxes .boxes_image a{
+    width: 100%;
+    height: 100%;
+}
+
 
 @media screen and (max-width: 1000px){
 
