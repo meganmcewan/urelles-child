@@ -82,6 +82,12 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
     .vc_col-sm-6{
         width: 100% !important
     }
+    .two_columns_66_33>.column1{
+        width: 100%!important
+    }
+    .two_columns_66_33>.column2>.column_inner{
+        padding: 0!important
+    }
     .animated_icons_with_text{
         pointer-events: none
     }
