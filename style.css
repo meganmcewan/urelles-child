@@ -60,19 +60,67 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
     margin-bottom: 40px;
     margin-top: 0;
 }
+
+.animated_icon_with_text_inner{
+    height: 150px!important;
+}
+
+
+@media screen and (max-width: 1000px){
+
+    .vc_col-sm-8{
+        width: 100% !important;
+    }
+    .vc_col-sm-4{
+        width: 100% !important;
+    }
+    .animated_icons_with_text{
+        pointer-events: none
+    }
+    .wpb_wrapper{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 700px){
+
+    .animated_icon_with_text_inner{
+        height: 100px!important;
+    }
+
+    
+
+    .animated_icon_with_text_holder:hover .animated_text{
+        display: block;
+        min-height: 300px
+    }
+
+}
     
 @media screen and (min-width: 1000px){
+
+    .animated_icon_with_text_inner{
+        height: 200px!important;
+    }
+
+    .wpb_wrapper{
+        text-align: left;
+    }
+
+   
+
+    .contact-cta{
+        padding: 40px !important;
+    };
+
     .title-h1 h1 {
             font-size: 64px;    
         };
 
-    .contact-cta{
-        padding: 40px;
-    }
-    .sidebar .button-wrap{
-        margin-top: 100px;
-    }
+  
 };
+
+
+    
 
 
 
