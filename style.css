@@ -19,13 +19,64 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 .title-h1 h1{
     font-size: 44px;
 }
+
+.contact-cta{
+    background-color:#F29555;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; 
+}
+
+.cta-content{
+    color: white;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+
+.button-wrap .cta-btn{
+    border: 2px solid white;
+    color: white;
+    padding: 16px 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 48px;
+    transition: all .35s ease
+   
+}
+
+.button-wrap a.cta-btn:hover{
+    background-color: white !important;
+    color: #F29555;
+    transition: all .35s ease;
+}
+
+.sidebar .button-wrap{
+    margin-bottom: 40px;
+    margin-top: 0;
+}
     
 @media screen and (min-width: 1000px){
     .title-h1 h1 {
-            font-size: 64px;
-    
+            font-size: 64px;    
         };
+
+    .contact-cta{
+        padding: 40px;
+    }
+    .sidebar .button-wrap{
+        margin-top: 100px;
+    }
 };
+
+
+
+
 
 
 

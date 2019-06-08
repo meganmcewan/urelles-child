@@ -17,13 +17,13 @@ if(isset($qode_options['sidebar_alignment']) && $qode_options['sidebar_alignment
 
 		<aside class="sidebar <?php echo implode(' ', $sidebar_classes) ?>">
 			<?php	if(in_category('urelles')) : ?>
-				<div style="margin-top:100px;" class="button-wrap">
+				<div  class="button-wrap">
 					<a href="/category/urelles/" style="color:#F29555;border-color:#F29555;background-color:#f5f5f5;" data-hover-background-color="#F29555" data-hover-color="#FFFFFF" class="qbutton">← Retour au blog urElles</a>
 				</div>
 
 			<?php else: ?>
 
-				<div style="margin-top:100px;" class="button-wrap">
+				<div class="button-wrap">
 					<a href="/blog/" style="color:#F29555;border-color:#F29555;background-color:#f5f5f5;" data-hover-background-color="#F29555" data-hover-color="#FFFFFF" class="qbutton">← Retour au blog</a>
 				</div>
 			<?php endif; ?>
