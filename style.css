@@ -64,7 +64,9 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 .animated_icon_with_text_inner{
     height: 150px!important;
 }
-
+.content.content_top_margin {
+    margin-top: 70px !important
+}
 
 @media screen and (max-width: 1000px){
 
@@ -74,10 +76,13 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
     .vc_col-sm-4{
         width: 100% !important;
     }
+    .vc_col-sm-6{
+        width: 100% !important
+    }
     .animated_icons_with_text{
         pointer-events: none
     }
-    .wpb_wrapper{
+    .page-id-213 .wpb_wrapper{
         text-align: center;
     }
 }
@@ -102,7 +107,7 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
         height: 200px!important;
     }
 
-    .wpb_wrapper{
+    .page-id-213 .wpb_wrapper{
         text-align: left;
     }
 
