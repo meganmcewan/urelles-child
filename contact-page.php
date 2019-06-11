@@ -210,7 +210,7 @@ jQuery(document).ready(function($){
         $j('form#contact-form .requiredField').each(function() {
             if(jQuery.trim($j(this).val()) == '' || jQuery.trim($j(this).val()) == jQuery.trim($j(this).attr('placeholder'))){
                 var labelText = $j(this).prev('label').text();
-                $j(this).parent().append("<strong class='contact-error'><?php _e('This is a required field', 'qode'); ?></strong>");
+                $j(this).parent().append("<strong class='contact-error'><?php _e('Ceci est une entrée obligatoire', 'qode'); ?></strong>");
                 $j(this).addClass('inputError');
                 hasError = true;
             } else { //else 1 
@@ -218,7 +218,7 @@ jQuery(document).ready(function($){
                     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
                     if(!emailReg.test(jQuery.trim($j(this).val()))){
                         var labelText = $j(this).prev('label').text();
-                        $j(this).parent().append("<strong class='contact-error'><?php _e('Please enter a valid email address.', 'qode'); ?></strong>");
+                        $j(this).parent().append("<strong class='contact-error'><?php _e("S'il vous plaît, mettez une adresse email valide.", 'qode'); ?></strong>");
                         $j(this).addClass('inputError');
                         hasError = true;
                     } 
@@ -248,7 +248,7 @@ jQuery(document).ready(function($){
 			if(html == "success"){
 				var formInput = $j(this).serialize();
 				
-				$j("form#contact-form").before("<div class='contact-success'><strong><?php _e('THANK YOU!', 'qode'); ?></strong><p><?php _e('Your email was successfully sent. We will contact you as soon as possible.', 'qode'); ?></p></div>");
+				$j("form#contact-form").before("<div class='contact-success'><strong><?php _e('MERCI!', 'qode'); ?></strong><p><?php _e('Votre email a été envoyé avec succès. Nous vous contacterons dès que possible.', 'qode'); ?></p></div>");
 				$j("form#contact-form").hide();
 				$j.post($j(this).attr('action'),formInput);
 				hasError = false;
@@ -262,7 +262,7 @@ jQuery(document).ready(function($){
 				<?php
 				} else {
 				?>
-					$j("form#contact-form").before("<div class='contact-success'><strong><?php _e('Email server problem', 'qode'); ?></strong></p></div>");
+					$j("form#contact-form").before("<div class='contact-success'><strong><?php _e('Désolé, il y a eu un problème. Veuillez réessayer plus tard.', 'qode'); ?></strong></p></div>");
 				<?php    
 				}
 				?>
