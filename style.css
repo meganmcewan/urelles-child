@@ -20,6 +20,16 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
     font-size: 36px;
 }
 
+    
+@media screen and (min-width: 1000px){
+    .title-h1 h1{
+        font-size: 64px;
+    }
+}
+    
+
+
+
 .contact-cta{
     background-color:#F29555;
     text-align: center;
@@ -154,6 +164,20 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 
   
 };
+.faq-single{
+    position: relative;
+}
+.plus-button::after{
+    content: "\2295";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    font-size: 44px;
+    color: #F29555
+
+}
 
 
     
