@@ -1,13 +1,181 @@
 /* custom style sheet for the child theme */
 
 
-h1{
-    font-size: 44px !important;
+
+
+
+
+.title-h1 h1{
+    font-size: 36px;
+}
+
+    
+@media screen and (min-width: 1000px){
+    .title-h1 h1{
+        font-size: 64px;
+    }
+}
+    
+
+
+
+.contact-cta{
+    background-color:#F29555 !important;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; 
+}
+
+.cta-content{
+    color: white;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+
+.button-wrap .cta-btn{
+    border: 2px solid white;
+    color: white;
+    padding: 16px 26px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 48px;
+    transition: all .35s ease
+   
+}
+
+.button-wrap a.cta-btn:hover{
+    background-color: white !important;
+    color: #F29555;
+    transition: all .35s ease;
+}
+
+.sidebar .button-wrap{
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.animated_icon_with_text_inner{
+    height: 150px!important;
+}
+.content.content_top_margin {
+    margin-top: 70px !important
+}
+.two_columns_75_25>.column1{
+    width: 100% !important;
+}
+.latest_post_holder.boxes .boxes_image a{
+    width: 100%;
+    height: 100%;
+}
+.latest_post_holder .latest_post_overlay .icon_plus{
+    margin: 0!important;
+}
+.parallax_section_holder{
+    height: auto!important
 }
 
 @media screen and (max-width: 1000px){
-    h1 {
-        font-size: 64px;
 
+    .vc_col-sm-8{
+        width: 100% !important;
     }
+    .vc_col-sm-4{
+        width: 100% !important;
+    }
+    .vc_col-sm-6{
+        width: 100% !important
+    }
+    .two_columns_66_33>.column1{
+        width: 100%!important
+    }
+    .two_columns_66_33>.column2>.column_inner{
+        padding: 0!important
+    }
+    .animated_icons_with_text{
+        pointer-events: none
+    }
+    .page-id-213 .wpb_wrapper{
+        text-align: center;
+    }
+  
 }
+@media screen and (min-width: 700px){
+
+    .animated_icon_with_text_inner{
+        height: 100px!important;
+    }
+
+    
+
+    .animated_icon_with_text_holder:hover .animated_text{
+        display: block;
+        min-height: 300px
+    }
+
+    .two_columns_75_25>.column1 {
+        width: 50% !important;
+    }
+
+
+}
+    
+@media screen and (min-width: 1000px){
+
+    .two_columns_75_25>.column1{
+        width: 75% !important;
+    }
+
+    .animated_icon_with_text_inner{
+        height: 200px!important;
+    }
+
+    .page-id-213 .wpb_wrapper{
+        text-align: left;
+    }
+
+   
+
+    .contact-cta{
+        padding: 40px !important;
+    };
+
+    .title-h1 h1 {
+            font-size: 64px;    
+        };
+
+  
+
+  
+};
+.faq-single{
+    position: relative;
+}
+.plus-button::after{
+    content: "\2295";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    font-size: 44px;
+    color: #F29555
+
+}
+
+
+    
+
+
+
+
+
+
+
+
+
