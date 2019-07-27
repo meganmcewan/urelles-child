@@ -265,8 +265,31 @@
 }
 
 
-    
+/* // ---- EVENTS PAGE  ----// */
 
+
+.page-events .featured-image img{
+    width: 100%;
+}
+
+.page-events .events-container {
+
+    width: 1100px;
+    margin: 0 auto;
+
+}
+
+.page-events .event-row{
+    display: flex;
+
+}
+
+.page-events .event-single{
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+}
+
+    
 
 
 
