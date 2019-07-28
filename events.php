@@ -21,7 +21,7 @@ Template Name: Events
            Want to know about upcoming events? Subscribe to our newsletter for all the latest information.
         </div>
         <div class="button-wrap">
-            <a href="/join-our-newsletter/" class='cta-btn'>ABONNEZ-VOUS</a>
+            <a href="/abonnez-vous/" class='cta-btn'>ABONNEZ-VOUS</a>
         </div>
 	</div>
         
