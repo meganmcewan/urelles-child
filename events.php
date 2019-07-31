@@ -18,7 +18,7 @@ Template Name: Events
     </div>
     <div class="events-cta" >
         <div class="cta-content">
-           Want to know about upcoming events? Subscribe to our newsletter for all the latest information.
+        Pour être tenu.e au courant des prochains événements, abonnez-vous.
         </div>
         <div class="button-wrap">
             <a href="/abonnez-vous/" class='cta-btn'>ABONNEZ-VOUS</a>
