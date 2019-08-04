@@ -1,15 +1,18 @@
 /* custom style sheet for the child theme */
 
-
-
-
-
-
 .title-h1 h1{
     font-size: 36px;
 }
 
-    
+.max-text{
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.max-text.grid_section .section_inner{
+    max-width: 100% !important;
+}
 @media screen and (min-width: 1000px){
     .title-h1 h1{
         font-size: 64px;
