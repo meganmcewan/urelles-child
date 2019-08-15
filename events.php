@@ -18,10 +18,10 @@ Template Name: Events
     </div>
     <div class="events-cta" >
         <div class="cta-content">
-        Pour être tenu.e au courant des prochains événements, abonnez-vous.
+        <?php _e(  'Pour être tenu.e au courant des prochains événements, abonnez-vous.', 'urelles'); ?>
         </div>
         <div class="button-wrap">
-            <a href="/abonnez-vous/" class='cta-btn'>ABONNEZ-VOUS</a>
+            <a href="/abonnez-vous/" class='cta-btn'><?php _e( 'ABONNEZ-VOUS', 'urelles'); ?></a>
         </div>
 	</div>
         

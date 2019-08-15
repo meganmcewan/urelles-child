@@ -107,34 +107,34 @@ if(isset($qode_options['use_custom_style']) && $qode_options['use_custom_style']
 								<div class="two_columns_50_50 clearfix">
 									<div class="column1">
 										<div class="column_inner">
-											<input type="text" class="requiredField" name="fname" id="fname" value="" placeholder="<?php _e('Prénom *', 'qode'); ?>" />
+											<input type="text" class="requiredField" name="fname" id="fname" value="" placeholder="<?php _e('Prénom *', 'urelles'); ?>" />
 										</div>
 									</div>
 									<div class="column2">
 										<div class="column_inner">
-											<input type="text" class="requiredField" name="lname" id="lname" value="" placeholder="<?php _e('Nom de famille *', 'qode'); ?>" />
+											<input type="text" class="requiredField" name="lname" id="lname" value="" placeholder="<?php _e('Nom de famille *', 'urelles'); ?>" />
 										</div>
 									</div>
 								</div>
 								<?php if ($hide_contact_form_website == "yes") { ?>
-									<input type="text" class="requiredField email" name="email" id="email" value="" placeholder="<?php _e('Courriel  *', 'qode'); ?>" />
+									<input type="text" class="requiredField email" name="email" id="email" value="" placeholder="<?php _e('Courriel  *', 'urelles'); ?>" />
 									<input type="hidden" name="website" id="website" value="" />
 								<?php } else { ?>
 									<div class="two_columns_50_50 clearfix">
 										<div class="column1">
 											<div class="column_inner">
-												<input type="text" class="requiredField email" name="email" id="email" value="" placeholder="<?php _e('Courriel *', 'qode'); ?>" />
+												<input type="text" class="requiredField email" name="email" id="email" value="" placeholder="<?php _e('Courriel *', 'urelles'); ?>" />
 											</div>
 										</div>
 										<div class="column2">
 											<div class="column_inner">
-												<input type="text" name="website" id="website" value="" placeholder="<?php _e('Site web', 'qode'); ?>" />	
+												<input type="text" name="website" id="website" value="" placeholder="<?php _e('Site web', 'urelles'); ?>" />	
 											</div>
 										</div>
 									</div>
 								<?php } ?>
 								
-								<textarea name="message" id="message" rows="10" placeholder="<?php _e('Message', 'qode'); ?>"></textarea>
+								<textarea name="message" id="message" rows="10" placeholder="<?php _e('Message', 'urelles'); ?>"></textarea>
 								
 								<?php
 								if($qode_options['use_recaptcha'] == "yes") :
@@ -160,7 +160,7 @@ if(isset($qode_options['use_custom_style']) && $qode_options['use_custom_style']
 								<?php endif; ?>
 								
 								<span class="submit_button_contact">
-									<input class="qbutton contact_form_button" type="submit" value="<?php _e('Contactez Nous', 'qode'); ?>" />
+									<input class="qbutton contact_form_button" type="submit" value="<?php _e('Contactez Nous', 'urelles'); ?>" />
 								</span>
 							</form>	
 						</div>
@@ -210,7 +210,7 @@ jQuery(document).ready(function($){
         $j('form#contact-form .requiredField').each(function() {
             if(jQuery.trim($j(this).val()) == '' || jQuery.trim($j(this).val()) == jQuery.trim($j(this).attr('placeholder'))){
                 var labelText = $j(this).prev('label').text();
-                $j(this).parent().append("<strong class='contact-error'><?php _e('Ceci est une entrée obligatoire', 'qode'); ?></strong>");
+                $j(this).parent().append("<strong class='contact-error'><?php _e('Ceci est une entrée obligatoire', 'urelles'); ?></strong>");
                 $j(this).addClass('inputError');
                 hasError = true;
             } else { //else 1 
@@ -218,7 +218,7 @@ jQuery(document).ready(function($){
                     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
                     if(!emailReg.test(jQuery.trim($j(this).val()))){
                         var labelText = $j(this).prev('label').text();
-                        $j(this).parent().append("<strong class='contact-error'><?php _e("S'il vous plaît, mettez une adresse email valide.", 'qode'); ?></strong>");
+                        $j(this).parent().append("<strong class='contact-error'><?php _e("S'il vous plaît, mettez une adresse email valide.", 'urelles'); ?></strong>");
                         $j(this).addClass('inputError');
                         hasError = true;
                     } 
@@ -240,7 +240,7 @@ jQuery(document).ready(function($){
 			
 			var html = $j.ajax({
 			type: "POST",
-			url: "<?php echo QODE_ROOT; ?>/includes/ajax_mail.php",
+			url: "<?php echo urelles_ROOT; ?>/includes/ajax_mail.php",
 			data: "recaptcha_challenge_field=" + challengeField + "&recaptcha_response_field=" + responseField + "&name=" + name + "&lastname=" + lastname + "&email=" + email + "&website=" + website + "&message=" + message,
 			async: false
 			}).responseText;
@@ -248,7 +248,7 @@ jQuery(document).ready(function($){
 			if(html == "success"){
 				var formInput = $j(this).serialize();
 				
-				$j("form#contact-form").before("<div class='contact-success'><strong><?php _e('MERCI!', 'qode'); ?></strong><p><?php _e('Votre email a été envoyé avec succès. Nous vous contacterons dès que possible.', 'qode'); ?></p></div>");
+				$j("form#contact-form").before("<div class='contact-success'><strong><?php _e('MERCI!', 'urelles'); ?></strong><p><?php _e('Votre email a été envoyé avec succès. Nous vous contacterons dès que possible.', 'urelles'); ?></p></div>");
 				$j("form#contact-form").hide();
 				$j.post($j(this).attr('action'),formInput);
 				hasError = false;
@@ -257,12 +257,12 @@ jQuery(document).ready(function($){
 				<?php
 				if ($qode_options['use_recaptcha'] == "yes"){
 				?>
-					$j("#recaptcha_response_field").parent().append("<span class='contact-error extra-padding'><?php _e('Invalid Captcha', 'qode'); ?></span>");
+					$j("#recaptcha_response_field").parent().append("<span class='contact-error extra-padding'><?php _e('Invalid Captcha', 'urelles'); ?></span>");
 					Recaptcha.reload();
 				<?php
 				} else {
 				?>
-					$j("form#contact-form").before("<div class='contact-success'><strong><?php _e('Désolé, il y a eu un problème. Veuillez réessayer plus tard.', 'qode'); ?></strong></p></div>");
+					$j("form#contact-form").before("<div class='contact-success'><strong><?php _e('Désolé, il y a eu un problème. Veuillez réessayer plus tard.', 'urelles'); ?></strong></p></div>");
 				<?php    
 				}
 				?>
