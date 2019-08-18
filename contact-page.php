@@ -240,7 +240,7 @@ jQuery(document).ready(function($){
 			
 			var html = $j.ajax({
 			type: "POST",
-			url: "<?php echo urelles_ROOT; ?>/includes/ajax_mail.php",
+			url: "<?php echo QODE_ROOT; ?>/includes/ajax_mail.php",
 			data: "recaptcha_challenge_field=" + challengeField + "&recaptcha_response_field=" + responseField + "&name=" + name + "&lastname=" + lastname + "&email=" + email + "&website=" + website + "&message=" + message,
 			async: false
 			}).responseText;
